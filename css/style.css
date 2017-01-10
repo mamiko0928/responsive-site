@@ -6,8 +6,6 @@ html {
   font-size: 62.5%; }
 
 body {
-    background-color: #fa8700;
-    color: #ffffff;
     font-size: 1.4rem;
     font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     line-height: 1.6;
@@ -21,19 +19,14 @@ body {
 
 /* Layout
 ------------------------------------------------------------*/
+
+
 section{
   padding:60px 0;}
-section .container{
-  width:90%;}
-.block-center,
-section .container
-{
-   display: block;
-   margin-right: auto;
-   margin-left: auto;
-}
+
 
 h1 {
+    color: #ffffff;
     font-size: 28px;
     font-size: 280%;
     font-size: 2.8em; 
@@ -43,6 +36,7 @@ h1 {
 }
 
 h2 {
+    color: #ffffff;
     font-size: 18px;
     font-size: 180%;
     font-size: 1.8em; 
@@ -52,6 +46,7 @@ h2 {
 }
 
 h3{
+    color: #ffffff; 
     font-size: 14px;
     font-size: 140%;
     font-size: 1.4em; 
@@ -71,6 +66,7 @@ p{
     }
 
 h5{ 
+    color: #ffffff;
     font-size: 10px;
     font-size: 100%;
     font-size: 1.0em; 
@@ -84,15 +80,19 @@ h5{
 /*
 ここからヘッダーのスタイル
 -----------------------------------*/
+header{
+     background-color: #fa8700;  
+     }
+     
 .topimage{
     background-image: url("../images/rf_top.jpg");
-    background-color: #fa8700;  
     height: 500px;
     width: 100%;
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-}
+    background-color: #fa8700;  
+  }
 @media screen and (max-width: 768px) {
   .topimage{
     height: 250px;
@@ -100,35 +100,54 @@ h5{
 }
 
 /*
+ここからコンセプトのスタイル
+-----------------------------------*/
+#concept
+  { background-color: #fa8700;
+   }
+    
+/*
 ここからアイテムズのスタイル
 -----------------------------------*/
 
 #items{
     background-color: #ffffff; 
-  }
+    }
+    
 #items .container{
-    display: -webkit-flex;
-    display:         flex;
-    justify-content: space-between;
-   }
+    margin-right: auto;
+    margin-left: auto;
 
-#items h2
-{
-    margin-bottom: 60px;
-    color: #fa8700;
+    padding:60px 0; 
+    width:90%;
+    background-color: #fa8700;
+    color: #ffffff;
+    
+}
+   
+#items .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    #items .flex{
+        display: block;
+    }
 }
 
 #items .flex-box
 {
+   
+    margin: 0px 10px;
+    padding: 20px;
+     
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-flex: 1;
             flex: 1;
-    margin: 0px 10px;
-    padding: 20px;
-    background-color: #fa8700;
-}
+   }
 
 @media screen and (max-width: 768px) {
   .flex-box{
@@ -136,11 +155,24 @@ h5{
   }
 }
 
+.flex-box img {
+    width: 100%;
+}
+
+.flex-box .caption {
+    text-align: justify;
+    width: 100%;
+    padding: 0;
+}
     
 /*
 ここからアバウトアスのスタイル
 -----------------------------------*/
-
+#contact
+{
+    background-color: #fa8700;
+    color: #ffffff;}
+    
 .contact-button
 {
   font-size: 20px;
@@ -162,7 +194,9 @@ h5{
     height: auto;
     text-align: center;
     margin: 60px;
-    margin: 0 auto
+    margin: 0 auto;
+    background-color: #fa8700;
+    color: #ffffff;
             }
             
  h4
@@ -170,16 +204,16 @@ h5{
     margin: 30px;
     font-size: 20px;
     text-transform: uppercase;
-    font-familys:Calibri;
+    font-family:Calibri;
      }
 
     
 /*
 ここからフッターのスタイル
 -----------------------------------*/
-footer
-{
+footer{    
+    background-color: #fa8700;
+    color: #ffffff;
     padding: 10px 0;
     text-align: center;
-    margin: 20px;
-    }    
+         }    
